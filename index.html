@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>My page</title>
+    <title>My Website</title>
 
     <!-- bootstrap css-->
     <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/sidebar.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,78 +18,217 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+
+    <style>
+        img.index {
+            max-width: 150px;
+            max-height: 100px;
+            width: auto;
+            height: auto;
+        }
+
+        div.items{
+        }
+
+        div.items .sub-item {
+            padding: 5%;
+        }
+    </style>
+
 </head>
 <body>
 
+<div id="wrapper" class="toggled">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    MyPage
+                </a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a href="#">Shortcuts</a>
+            </li>
+            <li>
+                <a href="#">Overview</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#" id="menu-toggle">
+                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                </div>
+            </div>
+        </nav>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="items" id="content_section1">
+
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-lg-4 text-center sub-item">
+
+                                    <img src="resources/images/basic-flat-icons/svg/browser.svg" class="index">
+
+                                    <div class="editContent">
+                                        <h3>Projeto 1</h3>
+
+                                        <p>
+                                            Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et
+                                            fermentum nulla pharetra in.
+                                        </p>
+                                    </div><!-- /.editContent -->
+
+                                    <a href="#" class="btn btn-default btn-embossed">Acessar</a>
+
+                                </div><!-- /.col-lg-4 col -->
+
+                                <div class="col-lg-4 text-center sub-item">
+
+                                    <img alt="" src="resources/images/basic-flat-icons/svg/padlock.svg" class="index">
+
+                                    <div class="editContent">
+                                        <h3>Projeto 2</h3>
+
+                                        <p>
+                                            Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et
+                                            fermentum nulla pharetra in.
+                                        </p>
+                                    </div><!-- /.editContent -->
+
+                                    <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
+
+                                </div><!-- /.col-lg-4 col -->
+
+                                <div class="col-lg-4 text-center sub-item">
+
+                                    <img alt="" src="resources/images/basic-flat-icons/svg/padlock.svg" class="index">
+
+                                    <div class="editContent">
+                                        <h3>Projeto 3</h3>
+
+                                        <p>
+                                            Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et
+                                            fermentum nulla pharetra in.
+                                        </p>
+                                    </div><!-- /.editContent -->
+
+                                    <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
+
+                                </div><!-- /.col-lg-4 col -->
+
+                            </div><!-- /.row -->
+                            <div class="row">
+
+                                <div class="col-lg-4 text-center sub-item">
+
+                                    <img alt="" src="resources/images/basic-flat-icons/svg/padlock.svg" class="index">
+
+                                    <div class="editContent">
+                                        <h3>Projeto 4</h3>
+
+                                        <p>
+                                            Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et
+                                            fermentum nulla pharetra in.
+                                        </p>
+                                    </div><!-- /.editContent -->
+
+                                    <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
+
+                                </div><!-- /.col-lg-4 col -->
+
+                                <div class="col-lg-4 text-center sub-item">
+
+                                    <img alt="" src="resources/images/basic-flat-icons/svg/padlock.svg" class="index">
+
+                                    <div class="editContent">
+                                        <h3>Projeto 5</h3>
+
+                                        <p>
+                                            Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et
+                                            fermentum nulla pharetra in.
+                                        </p>
+                                    </div><!-- /.editContent -->
+
+                                    <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
+
+                                </div><!-- /.col-lg-4 col -->
+
+                                <div class="col-lg-4 text-center sub-item">
+
+                                    <img alt="" src="resources/images/basic-flat-icons/svg/padlock.svg" class="index">
+
+                                    <div class="editContent">
+                                        <h3>Projeto 6</h3>
+
+                                        <p>
+                                            Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et
+                                            fermentum nulla pharetra in.
+                                        </p>
+                                    </div><!-- /.editContent -->
+
+                                    <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
+
+                                </div><!-- /.col-lg-4 col -->
+
+                            </div><!-- /.row -->
 
 
+                        </div><!-- /.container -->
 
-<div class="item content padding-bottom-60" id="content_section1">
+                    </div><!-- /.item -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-4 text-center">
-
-                <img alt="" src="resources/images/icons/building.svg">
-
-                <div class="editContent">
-                    <h3>Column One</h3>
-
-                    <p>
-                        Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et fermentum nulla pharetra in.
-                    </p>
-                </div><!-- /.editContent -->
-
-                <a href="#" class="btn btn-default btn-embossed">Learn more</a>
-
-            </div><!-- /.col-md-4 col -->
-
-            <div class="col-md-4 text-center">
-
-                <img alt="" src="resources/images/icons/flower.svg">
-
-                <div class="editContent">
-                    <h3>Column Two</h3>
-
-                    <p>
-                        Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et fermentum nulla pharetra in.
-                    </p>
-                </div><!-- /.editContent -->
-
-                <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
-
-            </div><!-- /.col-md-4 col -->
-
-            <div class="col-md-4 text-center">
-
-                <img alt="" src="resources/images/icons/mountain.svg">
-
-                <div class="editContent">
-                    <h3>Column Three</h3>
-
-                    <p>
-                        Ut non lobortis est. Ut dictum scelerisque luctus. Aliquam condimentum interdum odio, et fermentum nulla pharetra in.
-                    </p>
-                </div><!-- /.editContent -->
-
-                <a href="#" class="btn btn-default btn-embossed disabled">Em breve</a>
-
-            </div><!-- /.col-md-4 col -->
-
-        </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-</div><!-- /.item -->
-
-
-
+</div>
+<!-- /#wrapper -->
 
 <!-- jQuery -->
 <script src="js/jquery/jquery-3.1.0.min.js"></script>
 <!-- bootstrap js -->
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="app/controllers/MenuController.js"></script>
 </body>
+
+<script>
+    var menuController = new MenuController();
+    menuController.toogleSideMenu();
+</script>
+
+
 </html>
